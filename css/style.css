@@ -75,7 +75,7 @@ h6 {font-size: 1.0em; line-height: 2.0em;}
 
 #wrapper {
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 100%;
 }
 
 #logo a {
