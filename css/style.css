@@ -49,11 +49,9 @@ table {
 }
 
 
-
-
-/* Basic styles */
+/* Basic text Styles */
 body {
-	background: #ff4d4d;
+	background: #fff;
 	color: #000000; 
 	font-family: 'Open Sans', sans-serif;
 }
@@ -73,9 +71,32 @@ h4 {font-size: 1.4em; line-height: 2.0em;}
 h5 {font-size: 1.2em; line-height: 2.0em;} 
 h6 {font-size: 1.0em; line-height: 2.0em;} 
 
+p {
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#main ul, ol {
+	margin: 10px;
+}
+#main ul li {
+	list-style: square;
+}
+#main ol li {
+	list-style: decimal;
+}
+
+#main ul li, #main ol li {
+	margin: 0 0 0.5em 2em;
+}
+
+
+/* Theme styles */
+
 #wrapper {
 	margin: 0 auto;
 	max-width: 100%;
+	padding: 1em;
 }
 
 #logo a {
@@ -84,7 +105,13 @@ h6 {font-size: 1.0em; line-height: 2.0em;}
 	color: #fff;
 }
 
-nav ul {display: table;}
+nav {
+	margin: 1em 0;
+}
+
+nav ul {
+	display: table;
+}
 nav li {
 	border: 1px solid #f1f1f1;
 	display: table-cell;
