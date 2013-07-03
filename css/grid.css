@@ -1,0 +1,15 @@
+/* Very very simple, semantic and human friendly columns */
+
+/* Column size */
+#main         {width: 100%;}
+#main-content {width: auto;}
+#column-one   {width:  16%;}
+#column-two   {width:  30%;}
+
+/* old fashion table layout */
+#main {display: table;}
+#main-content, #column-one, #column-two {display: table-cell;}
+
+/* margin collumns */
+#column-one {padding-right: 3%;}
+#column-two {padding-left: 3%;}

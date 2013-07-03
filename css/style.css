@@ -1,58 +1,11 @@
-/* Reset */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import url("normalize.css");
+@import url("grid.css");
 
 
 /* Basic text Styles */
 body {
 	background: #fff;
-	color: #000000; 
+	color: #000; 
 	font-family: 'Open Sans', sans-serif;
 }
 a:link,
@@ -64,31 +17,7 @@ dl.portlet a:link {
 a:hover {
 	color:#000;
 }
-h1 {font-size: 2.0em; line-height: 2.0em;}
-h2 {font-size: 1.8em; line-height: 2.0em;} 
-h3 {font-size: 1.6em; line-height: 2.0em;} 
-h4 {font-size: 1.4em; line-height: 2.0em;} 
-h5 {font-size: 1.2em; line-height: 2.0em;} 
-h6 {font-size: 1.0em; line-height: 2.0em;} 
 
-p {
-	line-height: 1.2em;
-	margin-bottom: 0.5em;
-}
-
-#main ul, ol {
-	margin: 10px;
-}
-#main ul li {
-	list-style: square;
-}
-#main ol li {
-	list-style: decimal;
-}
-
-#main ul li, #main ol li {
-	margin: 0 0 0.5em 2em;
-}
 
 
 /* Theme styles */
@@ -99,18 +28,13 @@ p {
 	padding: 1em;
 }
 
-#logo a {
-	font-size: 3em;
-	text-decoration: none;
-	color: #fff;
-}
-
+/* Navigation */
 nav {
 	margin: 1em 0;
 }
-
 nav ul {
 	display: table;
+	padding: 0;
 }
 nav li {
 	border: 1px solid #f1f1f1;
@@ -123,3 +47,17 @@ nav li a {
 	line-height: 2em;
 	text-decoration: none;
 }
+
+/********* RESPONSIVE **********/
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
