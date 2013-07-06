@@ -5,7 +5,7 @@
 /* Basic text Styles */
 body {
 	background: #fff;
-	color: #000; 
+	color: #2C3438; 
 	font-family: 'Open Sans', sans-serif;
 }
 a:link,
@@ -15,9 +15,12 @@ dl.portlet a:link {
 	color:#205C90;
 }
 a:hover {
-	color:#000;
+	color:#333;
 }
-
+h1 {
+	margin-top: 0;
+	border-bottom: 1px solid #dedede;
+}
 
 
 /* Theme styles */
@@ -33,26 +36,104 @@ nav {
 	margin: 1em 0;
 }
 nav ul {
+	background: #fff;
+	border: 1px solid #dedede;
 	display: table;
 	padding: 0;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 nav li {
-	border: 1px solid #f1f1f1;
+	border-left: 1px solid #dedede;
 	display: table-cell;
 	width: 1%;
 	text-align: center;
 }
 nav li a {
 	display: block;
+	font-weight: bold;
 	line-height: 2em;
 	text-decoration: none;
+}
+nav li.selected {
+	background: #fafafa;
+}
+nav li:hover {
+	background: #fafafa;
+}
+nav li.selected:hover {
+	background: #f1f1f1;
+}
+
+/********** Content **********/
+/* breadcrumb */
+#portal-breadcrumbs {
+	margin-bottom: 1.8em;
+	font-size: 80%;
+}
+p {
+	line-height: 1.4em;
+}
+
+/*********** Portlets ***********/
+
+/* lists inside columns */
+aside dl, 
+aside dd, 
+aside ul {
+	padding: 0;
+	margin: 0;
+}
+aside a {
+	text-decoration: none;
+}
+
+.portletHeader {
+	border-bottom: 1px solid #dedede;
+	font-weight: bold;
+}
+.portlet {
+	border: 1px solid #dedede;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    padding: 4px 0;
+}
+
+/* portlet navigation */
+.portletNavigationTree ul {
+	margin: 0;
+}
+.portletNavigationTree li {
+	list-style-position: inside;
+}
+.portletNavigationTree .navTreeLevel0>li {
+	border-bottom: 1px solid #dedede;
+	list-style: none;
+}
+.portletNavigationTree a {
+	display: block;
+	padding: 0.3em 0.3em 0.3em 0.5em;
+}
+.portletNavigationTree a:hover {
+	background: #fafafa;
+}
+.navTreeLevel2 a {padding-left: 1em;}
+.navTreeLevel3 a {padding-left: 2em;}
+.navTreeLevel4 a {padding-left: 3em;}
+.navTreeLevel5 a {padding-left: 4em;}
+.navTreeLevel6 a {padding-left: 5em;}
+
+/********** Footer **********/
+footer {
+	border-top: 1px solid #dedede;
+	margin-top: 2em;
 }
 
 /********* RESPONSIVE **********/
 
-/* Large desktop */
-@media (min-width: 1200px) { ... }
- 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
  

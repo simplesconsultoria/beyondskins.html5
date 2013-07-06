@@ -8,8 +8,9 @@
 
 /* old fashion table layout */
 #main {display: table;}
-#main-content, #column-one, #column-two {display: table-cell;}
+#main-content, #column-one, #column-two {display: table-cell; vertical-align: top;}
 
 /* margin collumns */
-#column-one {padding-right: 3%;}
-#column-two {padding-left: 3%;}
+#main-content {padding: 0 2%;}
+#column-one {padding-right: 2%; border-right: 1px solid #dedede;}
+#column-two {padding-left: 2%; border-left: 1px solid #dedede;}
