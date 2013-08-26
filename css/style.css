@@ -22,7 +22,9 @@ h1 {
 	border-bottom: 1px solid #dedede;
 }
 
-
+.clear {
+	clear: both;
+}
 /* Theme styles */
 
 #wrapper {
