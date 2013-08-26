@@ -27,12 +27,13 @@
 
         <!-- Hader -->
         <replace css:content="#portal-personaltools" css:theme="#user" />
-        <replace css:content="#portal-siteactions" css:theme="#portal-siteactions" />
+        <replace css:content="#portal-siteactions" css:theme="#siteactions" />
         <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
         <replace css:content="#portal-header p.hiddenStructure" css:theme="#accessibility" />
         <replace css:content="#portal-searchbox" css:theme="#search" />
         <replace css:content="#portal-globalnav li" css:theme-children="nav ul" />
-        <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" />
+        <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw" />
+        <drop css:content="#portal-breadcrumbs" />
 
         <!--Content -->
         <merge attributes="class" css:content="body" css:theme="body" />
@@ -46,7 +47,4 @@
      
     </rules>
 
-
-    
 </rules>
-
