@@ -14,3 +14,4 @@
 #main-content {padding: 0 2%;}
 #column-one {padding-right: 2%; border-right: 1px solid #dedede;}
 #column-two {padding-left: 2%; border-left: 1px solid #dedede;}
+#portal-column-content {width: 100%, margin-left: -100%;}

@@ -33,6 +33,12 @@ h1 {
 	padding: 1em;
 }
 
+/* Logo */
+#logo {
+	width: 60%;
+	float: left;
+}
+
 /* Navigation */
 nav {
 	margin: 1em 0;
