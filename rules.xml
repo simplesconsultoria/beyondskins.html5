@@ -39,9 +39,16 @@
         <merge attributes="class" css:content="body" css:theme="body" />
         <copy attributes="id dir" css:content="body" css:theme="body" />
         <replace css:content="#portal-column-content" css:theme="#main-content" />
-        <replace css:content="#portal-column-one" css:theme="#column-one" />
-        <replace css:content="#portal-column-two" css:theme="#column-two" />
 
+        <!-- Columns -->
+        <replace css:content-children="#portal-column-one" css:theme-children="#column-one" />
+        <rules if-content="not(//*[@id='portal-column-one'])">
+            <drop css:theme="#column-one" />
+        </rules>
+        <replace css:content-children="#portal-column-two" css:theme-children="#column-two" />
+        <rules if-content="not(//*[@id='portal-column-two'])">
+            <drop css:theme="#column-two" />
+        </rules>
         <!-- Footer -->
         <replace css:content="#portal-footer p" css:theme-children="#footer-info" />
      
