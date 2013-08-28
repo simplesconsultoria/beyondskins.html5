@@ -3,7 +3,7 @@
 /* Column size */
 #main         {width: 100%;}
 #main-content {width: auto;}
-#column-one   {width:  16%;}
+#column-one   {width:  20%;}
 #column-two   {width:  30%;}
 
 /* old fashion table layout */
@@ -12,6 +12,6 @@
 
 /* margin collumns */
 #main-content {padding: 0;}
-#column-one {padding-right: 2%; border-right: 1px solid #dedede;}
-#column-two {padding-left: 2%; border-left: 1px solid #dedede;}
+#column-one {padding-right: 2%;}
+#column-two {padding-left: 2%;}
 #portal-column-content {width: 100%; margin-left: -100%;}
