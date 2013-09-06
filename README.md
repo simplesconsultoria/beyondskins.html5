@@ -1,2 +1,3 @@
-beyondskins.html5
+Beyondskins HTML5 theme for Plone
 =================
+
