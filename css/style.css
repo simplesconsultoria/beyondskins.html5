@@ -2,7 +2,7 @@
 @import url("grid.css");
 
 
-/* Basic text Styles */
+/********** Basic styles **********/
 body {
 	background: #fff;
 	color: #2C3438; 
@@ -17,28 +17,29 @@ dl.portlet a:link {
 a:hover {
 	color:#333;
 }
+
+#content a:hover,
+dl.portlet a:hover {
+    color: #333 !important; /* Unfortunatelly is necessary with sunburst */
+}
 h1 {
 	margin-top: 0;
 	border-bottom: 1px solid #dedede;
-}
-h2 {
-	border-bottom: 1px solid #dedede;
-}
-
-select {
-	max-width: 100%;
 }
 
 .clear {
 	clear: both;
 }
-/* Theme styles */
+
+/********** Main container **********/
 
 #wrapper {
 	margin: 0 auto;
 	max-width: 100%;
 	padding: 1em;
 }
+
+/********** Header **********/
 
 /* Logo */
 #logo {
@@ -87,11 +88,36 @@ nav li.selected:hover {
 	margin-bottom: 1.8em;
 	font-size: 80%;
 }
+/* text styles */
 p {
 	line-height: 1.4em;
 }
 
+/********** Tiles **********/
+
+
 /*********** Portlets ***********/
+
+/* general styles */
+.portletHeader,
+dl.portlet dt.portletHeader {
+    border-bottom: 1px solid #dedede;
+	font-weight: bold;
+    background: transparent;
+    color:#205C90;
+}
+.portletHeader a,
+dl.portlet dt.portletHeader a {
+    color:#205C90;
+}
+.portlet {
+	border: 1px solid #dedede;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    margin-bottom: 2em;
+    padding: 4px 0;
+}
 
 /* lists inside columns */
 aside dl, 
@@ -102,19 +128,6 @@ aside ul {
 }
 aside a {
 	text-decoration: none;
-}
-
-.portletHeader {
-	border-bottom: 1px solid #dedede;
-	font-weight: bold;
-}
-.portlet {
-	border: 1px solid #dedede;
-	-webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    margin-bottom: 2em;
-    padding: 4px 0;
 }
 
 /* portlet navigation */
@@ -141,16 +154,16 @@ aside a {
 .navTreeLevel5 a {padding-left: 4em;}
 .navTreeLevel6 a {padding-left: 5em;}
 
+
 /********** Footer **********/
 footer {
 	border-top: 1px solid #dedede;
 	margin-top: 2em;
 	padding: 1em 0;
+    font-size: 80%;
 }
 
 /********* RESPONSIVE **********/
-
-#searchbt {display: none;}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
@@ -159,4 +172,18 @@ footer {
 @media (max-width: 767px) { ... }
  
 /* Landscape phones and down */
-@media (max-width: 480px) { ... }
+@media (max-width: 480px) {
+    #logo {
+        width: 100%;
+        float: left;
+        text-align: center;
+        clear: both;
+        margin-bottom: 1em;
+    }
+    #portal-searchbox {
+        float: none;
+        text-align: center;
+        clear: both;
+        font-size: 80%;
+    }
+}
