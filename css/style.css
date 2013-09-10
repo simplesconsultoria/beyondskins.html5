@@ -22,10 +22,6 @@ a:hover {
 dl.portlet a:hover {
     color: #333 !important; /* Unfortunatelly is necessary with sunburst */
 }
-h1 {
-	margin-top: 0;
-	border-bottom: 1px solid #dedede;
-}
 
 .clear {
 	clear: both;
@@ -34,52 +30,79 @@ h1 {
 /********** Main container **********/
 
 #wrapper {
+	padding: 1em 0;
+}
+
+header, #main, footer, #portal-breadcrumbs {
+	width: 960px;
 	margin: 0 auto;
 	max-width: 100%;
-	padding: 1em;
 }
 
 /********** Header **********/
 
 /* Logo */
 #logo {
-	width: 60%;
+	width: 40%;
 	float: left;
 }
 
+#portal-siteactions {
+	clear: none;
+    text-align: right;
+}
+
+#portal-siteactions li {
+    margin-left: 0.8em;
+    display: block;
+    float: right;
+    width: 20px;
+    overflow: hidden;
+    white-space: nowrap;     
+}
+#portal-siteactions a:before {
+    font-family: FontAwesome;
+    font-size: 1.5em;
+}
+#siteaction-contact a:before {content: "\f0e0";}
+#siteaction-sitemap a:before {content: "\f0e8";} 
+#siteaction-accessibility a:before {content: "\f118";}
+#siteaction-search a:before {content: "\f002";}
+#portal-siteactions li#siteaction-accessibility {width: 17px;}
+
+
 /* Navigation */
+#main-navigation {
+	width: 60%;
+	float: left;
+}
 nav {
-	margin: 1em 0;
+	margin: 1.8em 0;
 }
 nav ul {
-	background: #fff;
-	border: 1px solid #dedede;
 	display: table;
 	padding: 0;
-	-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
 }
 nav li {
-	border-left: 1px solid #dedede;
 	display: table-cell;
 	width: 1%;
-	text-align: center;
+	text-align: right;
 }
-nav li a {
+nav li a:link {
 	display: block;
 	font-weight: bold;
+    font-size: 80%;
 	line-height: 2em;
 	text-decoration: none;
 }
-nav li.selected {
-	background: #fafafa;
+nav li a:link,
+nav li a:visited {
+    color: #333;
 }
-nav li:hover {
-	background: #fafafa;
-}
-nav li.selected:hover {
-	background: #f1f1f1;
+
+
+.banner-home img {
+	max-width: 100%;
 }
 
 /********** Content **********/
@@ -87,10 +110,32 @@ nav li.selected:hover {
 #portal-breadcrumbs {
 	margin-bottom: 1.8em;
 	font-size: 80%;
+	clear: both;
 }
+.section-front-page #portal-breadcrumbs {
+    display: none;
+}
+
 /* text styles */
 p {
 	line-height: 1.4em;
+}
+
+h1 {
+    color: #007cc3;
+    text-align: center;
+    border: none;
+    margin-bottom: 0;
+    font-size: 2.5em;
+}
+h2 {
+    color: #007cc3;    
+}
+#content .documentDescription, #content #description {
+    color: #999;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1em;
 }
 
 /********** Tiles **********/
@@ -111,10 +156,6 @@ dl.portlet dt.portletHeader a {
     color:#205C90;
 }
 .portlet {
-	border: 1px solid #dedede;
-	-webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
     margin-bottom: 2em;
     padding: 4px 0;
 }
@@ -187,3 +228,4 @@ footer {
         font-size: 80%;
     }
 }
+
