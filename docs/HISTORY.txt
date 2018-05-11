@@ -4,4 +4,60 @@ Changelog
 0.1dev (unreleased)
 -------------------
 
+- Added a simple Diazo theme package (Zip file) [macagua]
+
+- Updated diazo theme manifest file [macagua]
+
+- Added improvements about README file [macagua]
+
+- Added HTML5 validation for HTML file [macagua]
+
+- Added Plone theme package structure [macagua]
+
+- Importação inicial [André Nogueira]
+
+- Update README.md [André Nogueira]
+
+- add github link [André Nogueira]
+
+- html update [André Nogueira]
+
+- Adjusts for responsive [André Nogueira]
+
+- Fix some html5 validation issues. Update index texts [André Nogueira]
+
+- Remove visual styles from grid [André Nogueira]
+
+- Use index.html columns  [André Nogueira]
+
+- hide responsive search buttom  [André Nogueira]
+
+- remove unnecessary footer id  [André Nogueira]
+
+- Clean the mess  [André Nogueira]
+
+- Fix html that brokes footer  [André Nogueira]
+
+- Hide responsive search link  [André Nogueira]
+
+- Styles for header and columns  [André Nogueira]
+
+- ajustes gerais  [André Nogueira]
+
+- Update index.html [André Nogueira]
+
+- More styles and info [André Nogueira]
+
+- add a simple grid and normalize as a css reset [André Nogueira]
+
+- Add rules and basic styles [André Nogueira]
+
+- New files and folders [André Nogueira]
+
+- Change folders [André Nogueira]
+
+- initial upload [André Nogueira]
+
+- Initial Dizo release [André Nogueira]
+
 - Initial release
