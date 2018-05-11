@@ -99,10 +99,9 @@ Styles
 CSS Reset
 ^^^^^^^^^
 
-Beyondskins HTML5 use [Normalize.css](http://necolas.github.io/normalize.css/) 
-to reset the styles. Normalize.css makes browsers render all elements more 
-consistently and in line with modern standards. It precisely targets only the 
-styles that need normalizing.
+Beyondskins HTML5 use `Normalize.css`_ to reset the styles. ``Normalize.css`` 
+makes browsers render all elements more consistently and in line with modern 
+standards. It precisely targets only the styles that need normalizing.
 
 
 Grid
@@ -156,3 +155,4 @@ Credits
 
 .. _`Simples Consultoria`: http://www.simplesconsultoria.com.br/
 .. _`plone.app.theming`: https://pypi.org/project/plone.app.theming/
+.. _`Normalize.css`: http://necolas.github.io/normalize.css/
