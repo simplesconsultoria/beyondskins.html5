@@ -20,7 +20,7 @@ a:hover {
 
 #content a:hover,
 dl.portlet a:hover {
-    color: #333 !important; /* Unfortunatelly is necessary with sunburst */
+    color: #333 !important; /* Unfortunately is necessary with sunburst */
 }
 
 .clear {
